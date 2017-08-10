@@ -1,0 +1,76 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <!-- 使用MD兼容主题 -->
+    <style name="AppTheme" parent="AppThemeBase">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <!-- MD兼容主题 -->
+    <style name="AppThemeBase" parent="Theme.AppCompat.Light">
+        <!-- 去掉actionbar-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- 状态栏颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <!-- actionbar颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- background颜色-->
+        <item name="android:windowBackground">@color/bgcolor</item>  
+        <!-- SearchView颜色 -->  
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+    </style>
+    
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">  
+  
+    </style>  
+    
+    <style name="Theme.beginBackground" parent="AppThemeBase">
+    	<item name="android:windowBackground">@null</item>
+	</style>
+	
+    <style name="AppThemeBlack" parent="Theme.AppCompat.Light">
+        <!-- 去掉actionbar-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- 状态栏颜色-->
+        <item name="colorPrimaryDark">@color/colorPrimary1</item>
+        <!-- actionbar颜色-->
+        <item name="colorPrimary">@color/colorPrimary1</item>
+        <!-- background颜色-->
+        <item name="android:windowBackground">@color/bgcolor</item>  
+        <!-- SearchView颜色 -->  
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+
+    </style>
+    
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <item name="android:windowBackground">@color/primary</item>
+
+        <item name="colorControlNormal">@color/iron</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/iron</item>
+
+        <item name="colorButtonNormal">@color/primary_darker</item>
+    </style>
+    
+
+</resources>
